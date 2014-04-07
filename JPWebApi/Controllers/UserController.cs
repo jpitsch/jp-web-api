@@ -9,6 +9,7 @@ using System.Web.Http;
 
 namespace JPWebApi.Controllers
 {
+    [RoutePrefix("api/users")]
     public class UserController : ApiController
     {
         private UserRepository userRepository;
@@ -18,10 +19,16 @@ namespace JPWebApi.Controllers
             userRepository = new UserRepository();
         }
 
-        public User get()
+        public IEnumerable<User> Get()
         {
-            var user = userRepository.First(u => u.FirstName == "Jason");
-            return user;
+            var users = userRepository.Where(u => u.Role == "Admin");
+            return users;
+        }
+
+        public IEnumerable<User> Username(string username)
+        {
+            var users = userRepository.Where(u => u.UserName == username);
+            return users;
         }
     }
 }

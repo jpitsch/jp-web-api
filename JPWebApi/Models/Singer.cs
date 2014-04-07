@@ -8,7 +8,7 @@ using System.Web;
 
 namespace JPWebApi.Models
 {
-    public class Singer : Entity
+    public class Singer : BaseEntity
     {
         public string Name { get; set; }
 

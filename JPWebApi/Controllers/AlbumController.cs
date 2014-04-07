@@ -13,7 +13,6 @@ namespace JPWebApi.Controllers
     public class AlbumController : ApiController
     {
         private AlbumRepository albumRepository;
-        //static MongoRepository<Album> albumRepo = new MongoRepository<Album>();
 
         public AlbumController()
         {

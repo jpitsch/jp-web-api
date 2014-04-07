@@ -7,12 +7,11 @@ using System.Web;
 
 namespace JPWebApi.Services
 {
-    public interface IUserRepository
+    public interface ISingerRepository
     {
-        //public IEnumerable<User> GetUsersBy
     }
-    
-    public class UserRepository : MongoRepository<User>
+
+    public class SingerRepository : MongoRepository<Singer>
     {
     }
 }

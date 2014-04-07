@@ -124,6 +124,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="DTOs\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -155,11 +156,14 @@
     <Compile Include="Models\Album.cs" />
     <Compile Include="Models\BaseEntity.cs" />
     <Compile Include="Models\Gender.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\RecordCompany.cs" />
     <Compile Include="Models\Singer.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AlbumRepository.cs" />
+    <Compile Include="Services\RecordCompanyRepository.cs" />
+    <Compile Include="Services\SingerRepository.cs" />
     <Compile Include="Services\UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
